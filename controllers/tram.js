@@ -31,25 +31,29 @@ const constructDids = data => {
       dest: data.Dest0,
       carr: data.Carriages0,
       stat: data.Status0,
-      wait: data.Wait0
+      wait: data.Wait0,
+      line: 1
     },
     {
       dest: data.Dest1,
       carr: data.Carriages1,
       stat: data.Status1,
-      wait: data.Wait1
+      wait: data.Wait1,
+      line: 2
     },
     {
       dest: data.Dest2,
       carr: data.Carriages2,
       stat: data.Status2,
-      wait: data.Wait2
+      wait: data.Wait2,
+      line: 3
     },
     {
       dest: data.Dest3,
       carr: data.Carriages3,
       stat: data.Status3,
-      wait: data.Wait3
+      wait: data.Wait3,
+      line: 4
     }
   ];
   return dests.filter(dest => dest.dest === "East Didsbury");
